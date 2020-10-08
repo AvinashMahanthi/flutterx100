@@ -18,9 +18,9 @@ jobs:
         flutter build web
     - run: |
         git clone https://.:${{ secrets.PERSONAL_TOKEN }}@github.com/himanshusharma89/100DaysOfFlutter target
-        cp -R /build/web/ target
+        cp -R /build/web target
         git add target
-        git commit -m "Automatic publish from github.com/prject"
+        git commit -m "Automatic publish from github.com/project"
         git push target test
 #     - uses: andstor/copycat-action@v3
 #       with:
